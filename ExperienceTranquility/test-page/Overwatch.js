@@ -8,8 +8,3 @@ function playAudio() {
     sound.play();
 }
 
-function fadelogoout() {
-    //wait(5000);
-    
-}
-
