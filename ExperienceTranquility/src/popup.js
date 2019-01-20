@@ -1,21 +1,9 @@
-let changeColor = document.getElementById('changeColor');
+let toggleZen = document.getElementById('toggleZen');
 
-changeColor.onclick = function(element) {
-  let color = element.target.value;
+toggleZen.onclick = function(element) {
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.executeScript(
       tabs[0].id,
-      {code: 'document.body.style.backgroundColor = "' + color + '";'});
+      {code: 'document.getElementById("Zenyatta").style.display = "none";'});
   });
 };
-
-chrome.storage.sync.get('color', function(data) {
-  changeColor.style.backgroundColor = data.color;
-  changeColor.setAttribute('value', data.color);
-});
-
-// "background": {
-//   "scripts": ["background.js"],
-//   "persistent": false
-// },
-// "default_popup": "popup.html",
