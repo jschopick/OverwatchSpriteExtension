@@ -2,10 +2,17 @@ h1 {
     color: blue;
 }
 
+#Text{
+    position: absolute;
+    right: 115px;
+    bottom: 260px;
+    height: 70px;
+}
+
 #Zenyatta {
     position: absolute;
-    right: 1vw;
-    bottom: 3vh;
+    right: 0px;
+    bottom: 10px;
 }
 
 body {
