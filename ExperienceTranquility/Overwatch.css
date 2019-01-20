@@ -1,0 +1,17 @@
+h1 {
+    color: blue;
+}
+
+#Zenyatta {
+    position: absolute;
+    right: 1vw;
+    bottom: 3vh;
+}
+
+body {
+    background-color: white;
+}
+
+input.middle:focus {
+    outline-width: 0;
+}
